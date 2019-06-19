@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    app:cardCornerRadius="8dp"
+    android:layout_marginLeft="12dp"
+    app:cardElevation="2dp"
+    android:layout_marginTop="12dp"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_gravity="center"
+        android:layout_width="160dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imvFilm"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/spider_man" />
+
+        <Button
+            android:id="@+id/btnBuyTicket"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Buy Ticket"
+            app:layout_constraintEnd_toEndOf="@+id/imvFilm"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imvFilm"
+            app:layout_constraintTop_toBottomOf="@+id/imvFilm" />
+
+        <TextView
+            android:id="@+id/tvShowDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="05 / 07 / 2019"
+            app:layout_constraintEnd_toEndOf="@+id/btnBuyTicket"
+            app:layout_constraintStart_toStartOf="@+id/btnBuyTicket"
+            app:layout_constraintTop_toBottomOf="@+id/btnBuyTicket" />
+
+        <TextView
+            android:id="@+id/tvFilmTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPIDER-MAN Far From Home"
+            app:layout_constraintEnd_toEndOf="@+id/tvShowDate"
+            app:layout_constraintStart_toStartOf="@+id/tvShowDate"
+            app:layout_constraintTop_toBottomOf="@+id/tvShowDate" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
